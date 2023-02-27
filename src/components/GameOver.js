@@ -8,7 +8,7 @@ const GameOver = ({ wrongGuesses, setGameOver, setWrongGuesses, setRightGuesses 
         if (wrongGuesses === 6) {
             setMessage((prevMessage) => prevMessage = `Too many mistake:  ${wrongGuesses}/11`)
         } else {
-            setMessage((prevMessage) => prevMessage = `You win with only: ${wrongGuesses} mistake`)
+            setMessage((prevMessage) => prevMessage = `You win with ${11-wrongGuesses} right guesses` )
         }
     }
 
@@ -17,15 +17,19 @@ const GameOver = ({ wrongGuesses, setGameOver, setWrongGuesses, setRightGuesses 
     },)
 
     return (
-        <>
+    
+        <div className='gameOver'>
             <h1>GameOver</h1>
+            <br></br>
             <h3>{message}</h3>
+            <br></br>
             <button onClick={() => {
                 setGameOver(false)
                 setWrongGuesses(0)
                 setRightGuesses(0)
-            }}>Replay</button>
-        </>
+            }}> play Again</button>
+        </div>
+        
     )
 }
 
