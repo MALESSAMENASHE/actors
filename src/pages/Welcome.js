@@ -12,7 +12,7 @@ const Home = () => {
             You need 6 correct answers to win.
             </h3>
             <br></br>
-            <Link to={'/game'}>Continue to game...</Link>
+            <Link to={'/game'}>Click to Play...</Link>
             </div>
         </section>
     )
