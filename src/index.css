@@ -20,8 +20,18 @@ section {
   align-items: center;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
 
+}
+.welcome{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top:100px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 nav{
@@ -106,8 +116,10 @@ button:hover {
 
 }
 
-.states > div > img {
+.states  img {
   height: 50px;
+  /* position: absolute;
+  left:-50px */
 
 }
 .PictureGuess{
